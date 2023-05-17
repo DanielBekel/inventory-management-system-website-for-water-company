@@ -11,18 +11,22 @@
 <body>
     <div class="login-box">
    <h1>Login</h1> 
-   <form>
- 
-    <i  class="fa-solid fa-envelope"></i>
-    <input type="email"  placeholder="email">
+   <form action="index.php" method="post">
+ <div class="group">
+  
+   <input type="email"  placeholder="email" id="email" name="email" onkeyup="validEmail()">
+<span id="spann"></span>
    
-    <i class="fa-solid fa-lock"></i>
-    <input type="password"  placeholder="password">
-    <input type="submit" value="Submit">
-
-
+   
+    
+    <input type="password" class="emailInput" name="password" id="password" placeholder="password" onkeyup="validPassword()">
+    <span id="spann2"></span>
+    <input type="submit" id="submit" name="submit" onclick="return validateForm()" value="Submit">
+<span id="spann3"></span>
+</div>
    </form>
 </div>
 <p class="para-2">Not have an account? <a href="sign _up.html">Sign Up Here</a></p>
+<script defer src="validation/login.js"></script>
 </body>
 </html>

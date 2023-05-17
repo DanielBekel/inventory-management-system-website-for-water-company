@@ -1,11 +1,11 @@
 body{
 
-    background-color: #344a72;
+    background-color: #e3e7f0;
     font-family: 'Roboto',sans-serif;
 }
 .signup-box{
-  width: 360px;
-  height: 620px;
+  width: 400px;
+  height: 680px auto;
   margin: auto;  
   background-color: white;
   border-radius:3px;
@@ -13,8 +13,8 @@ body{
 }
 .login-box{
   
-  width: 360px;
-  height:280px ;
+  width: 420px;
+  height:360px ;
   margin: auto;
   
   border-radius: 3px;
@@ -29,6 +29,9 @@ form{
   margin-left: 20px;
   
 }
+input #email{
+  margin-bottom: 5px;
+}
 form label{
   display: flex;
   margin-top: 20px;
@@ -41,6 +44,7 @@ form input{
   border-radius: 6px;
   outline: none;
 }
+
 input[type="submit"]{
   width: 320px;
   height: 35px;
@@ -69,4 +73,34 @@ i{
   margin-left: -20px;
  
   color: #9999;
+}
+.input-group span{
+  color:red;
+ font-size: 14px;
+ 
+
+}
+#submit-error{
+  color: red;
+}
+
+.input-group span i{
+  color: seagreen;
+}
+#spann{
+  color: red;
+}
+#spann i{
+  color: seagreen;
+  margin-left: 360px;
+}
+#spann2{
+  color: red;
+}
+#spann2 i{
+  color: seagreen;
+  margin-left: 360px;
+}
+#spann3{
+  color: red;
 }

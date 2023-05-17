@@ -100,3 +100,7 @@ body{
     background-color: rgb(4, 4, 248);
     color: rgb(19, 114, 114);
 }
+#order2,#order3,#order4,#order5,#order6 i{
+    color: seagreen;
+}
+

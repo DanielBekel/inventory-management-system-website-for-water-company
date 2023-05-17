@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Css/order.css">
     <title>Order</title>
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <h1 class="header">ORDER HERE</h1>
@@ -14,23 +15,41 @@
         <div class="order-box">
 
         <form>
-
+            
         <select class="size" >
         <option selected disabled>enter size</option>
         <option value="l1">l1</option>
         <option value="l1">l1</option>
         <option value="l1">l1</option>
         </select>
-        <input class="quantity"  type="text" placeholder="Quantity"></br>
-        <i class="fa-solid fa-envelope"></i>
-        <input class="email" type="email" placeholder="email">
+    
+        <input class="quantity"  type="text" id="quantity" placeholder="Quantity" onkeyup="validateQuantity()"></br>
+        
+        <span id="order2"></span>
+    
+        
+        <input class="email" type="email" id="email" placeholder="email" onkeyup="validateEmail()">
+        <span id="order3"></span>
+    
+       
         <input class="date" type="date" placeholder="mm/dd/yyy"></br>
-        <input class="phone" type="text" placeholder="phone number"></br>
-        <input class="place" type="text" placeholder="place delivery"></br>
-        <textarea class="textearea" name="" >Remarks</textarea></br>
-        <input class="btn" type="submit" value="Order">
+    
+        
+        <input class="phone" type="text" id="phone" placeholder="phone number"onkeyup=" validatePhone()"></br>
+    <span id="order4"></span>
+        
+        <input class="place" type="text" id="place" placeholder="place delivery" onkeyup="validatePlace()"></br>
+  <span id="order5"></span>
+        
+        <textarea class="textearea" name="" id="remark" onkeyup="validateRemark()" >Remarks</textarea></br>
+    <span id="order6"></span>
+        
+        <input class="btn" type="submit" value="Order" id="submit" onclick="return validateForm()">
+    <span id="order7"></span>
+
         </form>
 
         </div> 
+        <script defer src="validation/order.js"></script>
 </body>
 </html>
